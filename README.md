@@ -13,11 +13,11 @@
   - Multiple concurrent transactions are not supported.
   - Intended for lightweight usage, not for high-concurrency scenarios.
 
----
-
 **DAO Framework** is the framework library for data access object readable or writable and Data tranport object or entity.
  
 **ExceptionLogger** is logger for exception.
+
+---
 
 ## Usage
 
