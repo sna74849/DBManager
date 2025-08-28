@@ -15,6 +15,12 @@
 
 ---
 
+**DAO Framework** is the framework library for data access object readable or writable and Data tranport object or entity.
+ 
+**ExceptionLogger** is logger for exception.
+
 ## Usage
 
 ### Connection and Transaction Management
+
+Please check Program.cs code. 
