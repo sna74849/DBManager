@@ -1,6 +1,6 @@
-﻿using ShoppingCart.Models.Dao;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using DBManager.Framework;
 
 namespace DBManager
 {

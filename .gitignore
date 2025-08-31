@@ -13,3 +13,8 @@ wwwroot/dist/
 
 # Others
 *.log
+
+# NuGet packages
+/packages/
+/**/packages/*
+!/**/packages/build/
