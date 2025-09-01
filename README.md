@@ -21,7 +21,7 @@
 ## Usage
 ### ###
 Please modify `app.config`
-
+```
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup> 
@@ -34,7 +34,8 @@ Please modify `app.config`
            Connect Timeout=10; Persist Security Info=True;TrustServerCertificate=True" />
 	</connectionStrings>
 </configuration>
-      
+```
+
 ### Connection and Transaction Management
 Please check `Program.cs` code.
 
