@@ -19,7 +19,7 @@
 ---
 
 ## Usage
-### ###
+### Connection configuration
 Please modify `app.config`
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -36,7 +36,7 @@ Please modify `app.config`
 </configuration>
 ```
 
-### Connection and Transaction Management
+### Connection and Transaction Management sample code
 Please check `Program.cs` code.
 
 ---
