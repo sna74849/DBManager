@@ -28,9 +28,9 @@ Please modify `app.config`
         <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
     </startup>
 	<connectionStrings>
-		<add name="shopping"
+		<add name="App-Name"
 			 providerName="System.Data.SqlClient"
-			 connectionString="Data Source=127.0.0.1; Initial Catalog=DatabaseName; User ID=UserId; Password=Password;
+			 connectionString="Data Source=127.0.0.1; Initial Catalog=Database-Name; User ID=User-Id; Password=Password;
            Connect Timeout=10; Persist Security Info=True;TrustServerCertificate=True" />
 	</connectionStrings>
 </configuration>
