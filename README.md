@@ -43,6 +43,8 @@ Please check `Program.cs` code.
 
 ## Dependencies
 
+Target Framework is .Net Framwork 4.8
+
 This library depends on the following NuGet packages:
 
 - [System.Configuration.ConfigurationManager](https://www.nuget.org/packages/System.Configuration.ConfigurationManager/)  
