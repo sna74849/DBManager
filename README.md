@@ -43,7 +43,7 @@ Please check `Program.cs` code.
 
 ## Dependencies
 
-Target Framework is `.NET Framwork 4.8`
+Target Framework is the `.NET Framwork 4.8`
 
 This library depends on the following NuGet packages:
 
