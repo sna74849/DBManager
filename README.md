@@ -30,7 +30,7 @@ Please modify `app.config`
 	<connectionStrings>
 		<add name="shopping"
 			 providerName="System.Data.SqlClient"
-			 connectionString="Data Source=`127.0.0.1`; Initial Catalog=`DatabaseName`; User ID=`UserId`; Password=`Password`;
+			 connectionString="Data Source=127.0.0.1; Initial Catalog=DatabaseName; User ID=UserId; Password=Password;
            Connect Timeout=10; Persist Security Info=True;TrustServerCertificate=True" />
 	</connectionStrings>
 </configuration>
