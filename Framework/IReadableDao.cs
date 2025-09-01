@@ -18,7 +18,7 @@ namespace DBManager.Framework
         /// The matching entity/DTO, or <c>null</c> if no match is found.
         /// </returns>
 #nullable enable
-        public T? Find(params object[] pkeys);
+        T? Fetch(params object[] pkeys);
 
         /// <summary>
         /// Retrieves a list of entities/DTOs that match the specified conditions.
@@ -26,7 +26,7 @@ namespace DBManager.Framework
         /// <returns>
         /// A list of matching entities/DTOs. Returns an empty list if none are found.
         /// </returns>
-        public List<T> Find();
+        List<T> Find();
 
         /// <summary>
         /// Searches for entities/DTOs using the specified primary key.
@@ -35,6 +35,6 @@ namespace DBManager.Framework
         /// <returns>
         /// A list of matching entities/DTOs. Returns an empty list if none are found.
         /// </returns>
-        public List<T> FindBy(params object[] pkeys);
+        List<T> Find(params object[] pkeys);
     }
 }

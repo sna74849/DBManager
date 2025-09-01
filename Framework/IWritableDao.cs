@@ -1,10 +1,11 @@
 ﻿namespace DBManager.Framework
 {
     /// <summary>
-    /// Defines write operations (insert, update, delete) for an entity or DTO.
+    /// Provides write operations (insert, update, partial update, delete)  
+    /// for a given entity or DTO type.
     /// </summary>
     /// <typeparam name="T">
-    /// The type of entity or DTO to operate on. Must be a reference type.
+    /// The entity or DTO type to operate on. Must be a reference type.
     /// </typeparam>
     public interface IWritableDao<T> where T : class
     {
@@ -23,13 +24,27 @@
         int Update(T t);
 
         /// <summary>
-        /// Deletes the entity or DTO that matches the specified primary key from the data store.
+        /// Partially updates the record that matches the specified primary key(s).
         /// </summary>
-        /// <param name="t">
-        /// The entity or DTO to delete.  
-        /// For composite keys, specify multiple values in order.
+        /// <param name="value">
+        /// The value or set of values to update.  
+        /// Can be an anonymous object containing only the properties to change.
+        /// </param>
+        /// <param name="pkeys">
+        /// The primary key(s) used to identify the target record.  
+        /// For composite keys, specify the values in order.
         /// </param>
         /// <returns>The number of rows affected.</returns>
-        int Delete(T t);
+        int Patch(object value, params object[] pkeys);
+
+        /// <summary>
+        /// Deletes the record that matches the specified primary key(s).
+        /// </summary>
+        /// <param name="pkeys">
+        /// The primary key(s) used to identify the target record.  
+        /// For composite keys, specify the values in order.
+        /// </param>
+        /// <returns>The number of rows affected.</returns>
+        int Delete(params object[] pkeys);
     }
 }

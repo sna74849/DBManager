@@ -17,7 +17,7 @@ namespace DBManager
                     {
                         IReadableDao<CustomerEntity> readableDao = new Dao();
                         object[] pkeys = { "account", "p" };
-                        var customer = readableDao.Find(pkeys);
+                        var customer = readableDao.Fetch(pkeys);
                         Console.WriteLine("DBManager has successed running.:" + customer);
                         using var transactionManager = connectionManager.BeginTransaction();
                         {
@@ -57,7 +57,7 @@ namespace DBManager
     internal class Dao : BaseEntityDao<CustomerEntity>
     {
         #nullable enable
-        protected override CustomerEntity? Find(params object[] pkeys)
+        protected override CustomerEntity? Fetch(params object[] pkeys)
         {
             string query = @"
                             SELECT 
@@ -97,11 +97,6 @@ namespace DBManager
             throw new NotImplementedException();
         }
 
-        protected override List<CustomerEntity> FindBy(params object[] pkeys)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override int Insert(CustomerEntity t)
         {
             throw new NotImplementedException();
@@ -126,7 +121,18 @@ namespace DBManager
                 return com.ExecuteNonQuery();
             }
         }
-        protected override int Delete(CustomerEntity t)
+
+        protected override List<CustomerEntity> Find(params object[] pkeys)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override int Delete(object[] pkeys)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override int Patch(object value, params object[] pkeys)
         {
             throw new NotImplementedException();
         }
