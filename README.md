@@ -28,9 +28,9 @@ Please modify `app.config`
         <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
     </startup>
 	<connectionStrings>
-		<add name="App-Name"
+		<add name="app-name"
 			 providerName="System.Data.SqlClient"
-			 connectionString="Data Source=127.0.0.1; Initial Catalog=Database-Name; User ID=User-Id; Password=Password;
+			 connectionString="Data Source=127.0.0.1; Initial Catalog=database-name; User ID=user-id; Password=password;
            Connect Timeout=10; Persist Security Info=True;TrustServerCertificate=True" />
 	</connectionStrings>
 </configuration>
