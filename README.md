@@ -21,6 +21,7 @@
 ## Usage
 ### Connection configuration
 Please modify `app.config`
+If you can't find `app.config`, you should rename `web.config`.
 ```
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
@@ -29,7 +30,7 @@ Please modify `app.config`
     </startup>
 	<connectionStrings>
 		<add name="app-name"
-			 providerName="System.Data.SqlClient"
+			 providerName="Microsoft.Data.SqlClient"
 			 connectionString="Data Source=127.0.0.1; Initial Catalog=database-name; User ID=user-id; Password=password;
            Connect Timeout=10; Persist Security Info=True;TrustServerCertificate=True" />
 	</connectionStrings>
